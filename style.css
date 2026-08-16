@@ -27,14 +27,18 @@ section { padding:4rem 0; border-bottom:1px solid rgba(255,255,255,0.03); }
 
 /* ===== NAVBAR ===== */
 .top-nav {
-  position: sticky; top:0; z-index:50; background: rgba(5,8,22,0.97);
-  backdrop-filter: blur(12px); border-bottom:1px solid rgba(255,255,255,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(15, 23, 42, 0.97);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
 }
 .nav-inner { display:flex; justify-content:space-between; align-items:center; padding:0.9rem 1.5rem; }
 .logo { font-weight:700; font-size:1.1rem; letter-spacing:0.04em; }
-.logo span { color:#4f46e5; }
-.main-nav a { margin-left:1.3rem; text-decoration:none; font-size:0.95rem; color:#c7d2fe; position:relative; padding-bottom:0.2rem; }
-.main-nav a::after { content:""; position:absolute; left:0; bottom:0; width:0%; height:2px; background:#4f46e5; transition:width .25s }
+.logo span { color: var(--primary); }
+.main-nav a { margin-left:1.3rem; text-decoration:none; font-size:0.95rem; color: var(--text-muted);; position:relative; padding-bottom:0.2rem; }
+.main-nav a::after { content:""; position:absolute; left:0; bottom:0; width:0%; height:2px; background: var(--primary); transition:width .25s }
 .main-nav a:hover::after, .main-nav a.active::after { width:100%; }
 
 /* ===== HERO ===== */
